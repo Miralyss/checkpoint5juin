@@ -24,7 +24,7 @@ if($payment < 0){
     $error = 1;
 }
 echo $name . " " . $payment . "<br>";
-if (error == 0)
+if (error === 0)
     {
         $req = $bdd->prepare('INSERT INTO bribe(name,payment) VALUES (:name ,:payment)');
         $req->execute(array(
